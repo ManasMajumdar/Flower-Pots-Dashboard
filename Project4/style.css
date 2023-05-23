@@ -1,0 +1,297 @@
+.list-group {
+    margin: 15px 0;
+    max-height: 180px;
+}
+
+
+.page-wrapper {
+    margin: 2em;
+}
+
+.title-flex {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.title-flex h2 {
+    margin-right: 2em;
+}
+
+.cards-grid {
+    font-size: 2em;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "card-1 card-2 card-3 card-4 card-5";
+}
+
+
+@media (max-width: 50em) {
+    .cards-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "card-1 card-2 card-3 card-4";
+    }
+
+    .wrapper-16-by-9:nth-of-type(5) {
+        display: none;
+    }
+}
+
+@media (max-width: 40em) {
+    .cards-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "card-1 card-2 card-3";
+    }
+
+    .wrapper-16-by-9:nth-of-type(4) {
+        display: none;
+    }
+}
+
+
+@media (max-width: 30em) {
+    .cards-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "card-1 card-2";
+    }
+
+    .wrapper-16-by-9:nth-of-type(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 20em) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "card-1";
+    }
+
+    .wrapper-16-by-9:nth-of-type(2) {
+        display: none;
+    }
+}
+
+.wrapper-16-by-9:nth-of-type(1) {
+    grid-area: card-1;
+}
+
+.wrapper-16-by-9:nth-of-type(2) {
+    grid-area: card-2;
+}
+
+.wrapper-16-by-9:nth-of-type(3) {
+    grid-area: card-3;
+}
+
+.wrapper-16-by-9:nth-of-type(4) {
+    grid-area: card-4;
+}
+
+.wrapper-16-by-9:nth-of-type(5) {
+    grid-area: card-5;
+}
+
+.cards-grid>* {
+    background-color: skyblue;
+}
+
+.wrapper-16-by-9 {
+    position: relative;
+    height: 0;
+    padding: 56.25% 0 0 0;
+}
+
+.card-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+footer {
+	background: #d6dfdf;
+	padding: 10px 0;
+}
+.single-content {
+	text-align: center;
+	padding: 50px 0;
+}
+.single-box p {
+	color: #000000;
+	line-height: 1.9;
+}
+.single-box h3 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #000000;
+}
+.single-box .card-area i {
+	color: #000000;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+
+.single-box h2 {
+	color: #000000;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+@media (max-width: 767px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+}
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+        background-color: #f9f6f2;
+}
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px;
+}
+.card{
+    border-radius: 80px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    border-radius: 12px;
+
+
+
+}
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+h5{
+    color: rgb(127, 184, 155);
+}
+
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: 12px;
+}
+
+.btn{
+    font-size: 20px !important;
+    color: #328d9d !important;
+    border-radius: 12px !important; 
+    background-color: hsl(188.97deg 51.69% 40.59%) !important; 
+    color: #f1f1f1 !important;
+}
+
+
+*{
+    box-sizing: border-box !important;
+}
+
+body {
+  font-family: "Lato", sans-serif !important;
+}
+
+.tab {
+    float: left !important;
+    border: 1px solid #ccc !important;
+    background-color: #f1f1f1 !important;
+    width: 20% !important;
+  
+}
+
+
+.tab button {
+    display: block !important;
+    background-color: inherit !important;
+    color: black !important;
+    padding: 22px 16px !important;
+    width: 100% !important;
+    border: none !important;
+    outline: none !important;
+    text-align: left !important;
+    cursor: pointer !important;
+    transition: 0.3s !important;
+    font-size: 17px !important;
+}
+
+
+.tab button:hover {
+    background-color: #ddd !important;
+}
+
+.tab button.active {
+    background-color: #ccc !important;
+}
+
+.tabcontent {
+    float: left !important;
+    padding: 0px 0px !important;
+    width: 69% !important;
+    border-left: none !important;
+    height: 780px !important;
+}
+
+.card1{
+    border-radius: 12px !important; 
+    border: 10px !important;
+}
+
+.card-text{
+    color: hsl(207.69deg 5.83% 56.27%) !important;
+}
+
+.img1{
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 12px !important;
+}
+
+.p{
+      color: hsl(210deg 3.75% 31.37%) !important;
+}
+
+.p1{
+    font-size: small !important; 
+    color:hsl(216deg 2.15% 45.69%) !important;
+}
+
+.rupees{
+    color: hsl(210deg 3.75% 31.37%) !important;
+}
+
+.img2{
+    width: 30px !important; 
+    border-radius: 8px !important;
+}
+
+.overflow-scroll{
+    height: 500px !important;
+    overflow-y: auto !important;
+}
